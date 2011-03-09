@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@{
+    bool isTrue = true;
+    int myAge = 30;
+    int birthday = 1;
+    myAge = myAge + birthday;
+    string firstName = "Gideon";
+    string lastName = "Mwebi";
+    string fullName = firstName + " " + lastName;
+ }
+
+ <p>@isTrue</p>
+ <p>@myAge</p>
+ <p>@fullName</p>
