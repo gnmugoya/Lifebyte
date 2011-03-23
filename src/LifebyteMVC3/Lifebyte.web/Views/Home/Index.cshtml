@@ -1,65 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Lifebyte Computer Ministry";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
 
-@{
-    
-    int myAge = 36;
-    if (myAge < 36)
-    
-    {
-        <p> You are too Young!</p>
-    }
-    else if (myAge == 36)
-    { 
-        <p>Just the right Age for me!</p>
-    }
-    else
-    { 
-        <p> Too old for me!...</p>
-    }
-    
-    //Gourd clauses
-
-    string myName = "Gideon";
-    if (myName =="Dan")
-    {
-        <p> hello Dan</p>
-        } 
-        
-        if (myName == "Gideon")
-  
-    {
-        <p> Suswagatham Gideon</p>
-    }
-    
-  }
- 
- @{ for (int i = 0; i < 10; i++)
-			{
-			 <p>@i</p>
-     		}
-  }
-  @{
-      string[] firstNames = new string[4];
-      firstNames[0] = "Karen";
-      firstNames[1] ="Gideon";
-      firstNames[2] = "Dan";
-      firstNames[3] = "Kumar";
-
-      foreach (var item in firstNames)
-      {
-          <p>@item</p>
-      }          
-  }
-  @{
-      bool validLogin =false;
-          while (validLogin == false)
-          {
-              <p> Please enter login</p>
-                  validLogin =true;
-           }
-  }
